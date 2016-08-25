@@ -1,0 +1,9 @@
+yes please help me.
+Android apps must be digitally signed with a release key before you can upload them to the store. To generate a hash of your release key, run the following command on Mac or Windows substituting your release key alias and the path to your keystore:
+
+keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
+
+This will generate a 28-character string that you should copy and paste into the field below. Also, see the Android documentation for signing your apps.
+Key Hashes
+thanks
+Eltegani
